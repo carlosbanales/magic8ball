@@ -1,11 +1,3 @@
-const responses = [
-    "Yes",
-    "I say no",
-    "Mabye, someday",
-    "Not even magic can tell you that",
-    "There's a really good chance"
-]
-
-
-
-console.log(responses)
+function SwapImage(){
+    document.getElementById("8ball").src="../assets/magic8ball_2.png"
+}
