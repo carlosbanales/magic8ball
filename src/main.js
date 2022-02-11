@@ -16,7 +16,7 @@
 // images[0] = "../assets/1.png";
 
 function SwapImage(){
-    const index = Math.floor(Math.random() * 20);
+    const index = Math.floor(Math.random() * 19);
     console.log(index);
     document.getElementById("8ball").src="../assets/" + index + ".png";
 }
