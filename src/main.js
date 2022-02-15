@@ -16,9 +16,14 @@
 // images[6] = "../assets/6.png";
 // images[7] = "../assets/7.png";
 // images[8] = "../assets/8.png";
+function imgShake() {
+    document.getElementById("8ball").classList.toggle("shaking");
+}
 
 function SwapImage(){
-    document.getElementById("8ball").className += " shaking";
+    imgShake();
+    var shakeElement = document.getElementById("8ball");
+    shakeElement.addEventListener('animationend', imgShake);
     // in order to get image 19.png to pop up, Math.random must
     // return .95 or greater which doesn't happen often
     const index = Math.floor(Math.random() * 20);
