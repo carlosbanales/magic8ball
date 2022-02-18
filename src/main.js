@@ -1,4 +1,4 @@
-//First attempt, was able to get the image to 
+// was able to get the image to 
 // pop up but not cycle through the rest of the images
 
 // Creates image element and appends it to the div
@@ -21,7 +21,6 @@
 // images[7] = "../assets/7.png";
 // images[8] = "../assets/8.png";
 
-
 function imgShake() {
     // shakes the image every other time
     document.getElementById("8ball").classList.toggle("shaking");
@@ -32,8 +31,14 @@ function imgShake() {
     console.log(shakeElement);
 }
 
+function storeQuestion() {
+    var question = document.getElementById('input').value;
+    console.log(question);
+}
+
 function SwapImage(){
     imgShake();
+    storeQuestion();
     // in order to get image 19.png to pop up, Math.random must
     // return .95 or greater which doesn't happen often
     const index = Math.floor(Math.random() * 20);
@@ -42,3 +47,6 @@ function SwapImage(){
         document.getElementById("8ball").src="../assets/" + index + ".png";
     }, 500);
 };
+
+
+
