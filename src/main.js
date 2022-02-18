@@ -47,6 +47,3 @@ function SwapImage(){
         document.getElementById("8ball").src="../assets/" + index + ".png";
     }, 500);
 };
-
-
-
